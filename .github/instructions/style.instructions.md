@@ -46,6 +46,15 @@ ALL UI components MUST use dark theme colors:
 - Use semantic grouping: layout, spacing, colors, typography
 - Keep utility combinations readable and maintainable
 
+## TypeScript and Commenting Conventions
+
+- Prefer explicit TypeScript types for function parameters and returns, especially in `db/` and `src/lib/`.
+- Model component props with named interfaces and keep them near the implementation they describe.
+- Favor small, expressive helper functions over large untyped blocks of logic.
+- Comments should explain intent, constraints, or domain reasoning; avoid comments that simply describe code mechanics or repeat nearby names.
+- Treat outdated comments as bugs to fix in the same patch that changes the code.
+- ESLint enforces the repo's baseline TypeScript quality rules (`@typescript-eslint` recommended rules and no-unused-vars with `_` exemptions), so keep code free of obvious lint issues as part of the same change.
+
 ## Modern UI Patterns
 
 - Rounded corners: `rounded-lg`, `rounded-xl`, `rounded-2xl`

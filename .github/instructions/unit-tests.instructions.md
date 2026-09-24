@@ -77,6 +77,13 @@ describe('getAllGames', () => {
 - Ordering guarantees (alphabetical by title) — static builds depend on this being deterministic
 - Determinism of seed-derived values
 
+## Commenting and Test Readability
+
+- Write comments to explain intent, edge cases, or why a test is structured a certain way.
+- Do not narrate obvious assertions or repeat the test title in prose.
+- When a test covers a tricky regression, add a short note describing the bug or business rule being protected.
+- Keep comments current; if the scenario changes, update the comment in the same patch.
+
 ## Best Practices
 
 - Follow Arrange-Act-Assert.
