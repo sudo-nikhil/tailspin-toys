@@ -51,6 +51,15 @@ Refer to technology-specific instruction files:
 - Use props for configuration, not duplication
 - Document component APIs with TypeScript types
 
+### Commenting and Documentation Standards
+
+- Comment to explain intent, trade-offs, and non-obvious decisions — not to restate what the template or code already says.
+- Remove comments that merely paraphrase the following line or describe the obvious flow. If the code is self-explanatory, prefer no comment.
+- Update or remove stale comments when the related logic changes; outdated comments are treated as bugs.
+- Reusable Astro components should document their `Props` interfaces clearly enough that another contributor can understand the component contract without reading the implementation.
+
+A good comment explains why a behavior exists; a bad comment states what the code is already doing.
+
 ## Development Workflow
 
 1. **Choose the right tool**: 
